@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Birthday Wishes</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <audio autoplay>
+        <source src = "y2mate.com - Happy Birthday Piano Version.mp3" type = "audio/mpeg">
+    </audio>
+    <body>
+        <section>
+            <img src="stars.png" id="stars">
+            <img src="moon.png" id="moon">
+            <img src="mountains_behind.png" id="mountains_behind">
+            <h2 id="text">Happy Birthday!</h2>
+            <a href="#sec" id="btn">Next!</a>
+            <img src="mountains_front.png" id="mountains_front">
+        </section>
+        <div class="sec" id="sec">
+            <h2>Little Wishes For You</h2>
+            <p>Aduh, rapih ga ya jadinya huhuhu... Udah lama ga ngoding banyak yang lupaa hikd. Tapi semoga rapih deh ya?<br><br>Hawoww, Sayangg~!! Ciee.. udah makin tua aja ni ya cowo akuu? Jadi umur berapa dong sekarang? 22 ya? Uuuu.. Bocil yang dulunya digendong-gendong sama mama papa sekarang udah dewasa ya? Happy Birthday ya, Sayang! Semoga dengan bertambahnya usia, ayang bisa jadi pribadi yang lebih baik lagi kedepannya. Semoga panjang umur, senantiasa diberikan kesehatan oleh Allah, dilancarkan rezekinya, kelak bisa sukses, jadi kebanggaan buat mama sama papa, sama aku juga xixixi.<br><br>Pesan aku ga banyak sih, jujur bingung mau sampein apa huhuhu. Pokonya yang paling penting tetep jaga ibadahnya dan tetep hormat sama mama papa. Udah gede, kebiasaan numpuk baju harus dibuang jauh-jauh tuh. Jangan sering mager juga loh. Tetep jaga kesehatan juga ya, jangan sampe sakit. Waktunya makan ya makan, waktunya bobo ya bobo. Kalo sakit yang susah siapa? Kan ayang juga, mama papa pasti ikut kepikiran juga. Humm, apa lagi yaw? Oiya, harapan aku sih semoga kedepannya ayang bisa lebih peka sama akuu mwehehehe soalnya kadang di kodein suka ga peka heuu. Tapi gapapa, gemes juga kalo liat ayang bingung sama apa yang aku kodein ehehehe.<br><br>Lagii.. ada yang penting juga. Be yourself, tapi apa yang dirasa kurang baik, perbaiki. Manusia gaada yang sempurna, makin tua berarti makin apa? Makin dekat juga sama ajal (aku ga mendoakan hal buruk ya, jangan salah paham). Perbanyak istighfarnya ya, jangan sampe renggang hubungannya sama Allah. Ya, aku bukan orang yang bener-bener alim sih. Kan gaada salahnya mengingatkan? Mweheheh, tapi aku yakin ayang ga bakal ninggalin ibadah begitu saja. Kan udah kewajiban? Keknya itu aja sih pesan dan harapannya.<br><br>Hummm, soal kado ya? Aku ada kado sebenernya, tapi kayanya bakal nyusul di kemudian hari aja. Aku udah janji sama diri aku sendiri buat kasih kado ke ayang. Yang pasti kado itu harus bener-bener sampe di tangan ayang nantinya. Is it okey? Nunggu dulu? Kalo ga okey aku pundung sih hump. Fufufu ngga, ngga pundung. Tapi bakal aku usahain sesegera mungkin. Mungkin itu dulu aja sih. Sekali lagi deh, Happy Birthday Sayangg! I love you so much!<br><br>(actually mau aku kasih tadi malem, tapi ayang ga bolehin aku begadang hehehe~)
+            </p>
+        </div>
+
+        <script>
+            let stars = document.getElementById('stars');
+            let moon = document.getElementById('moon');
+            let mountains_behind = document.getElementById('mountains_behind');
+            let text = document.getElementById('text');
+            let btn = document.getElementById('btn');
+            let mountains_front = document.getElementById('mountains_front');
+
+            window.addEventListener('scroll', function(){
+                let value = window.scrollY;
+                stars.style.left = value + 0.25 + 'px';
+                moon.style.top = value + 1.05 + 'px';
+                mountains_behind.style.top = value + 0.5 + 'px';
+                text.style.marginRight = value + 0 + 'px';
+                text.style.marginTop = value + 100 + 'px';
+            })
+        </script>
+    </body>
+</html>
